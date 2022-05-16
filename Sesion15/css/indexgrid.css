@@ -1,0 +1,43 @@
+/*.grid{
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px ;        
+}
+*/
+.grid{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns:200px 1fr 200px ;/*esto es opcional*/
+    grid-template-rows:200px 1fr 100px ;/*esto es opcional*/
+    grid-template-areas: "my-header my header my-header" 
+    "my-nav my-section my-aside"
+    "my-footer my-footer";   
+}   
+main{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    grid-area: my-header;
+    background-color: violet;
+}
+nav{
+    grid-area: my-nav;
+    background-color:cornflowerblue ;
+}
+section{
+    grid-area: my-section;
+    background-color: indigo;
+}
+aside{
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+footer{
+    grid-area: my-footer;
+    background-color: darkorchid;
+}
+div>div{
+    border: 1px solid;
+}
