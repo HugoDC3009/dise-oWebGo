@@ -1,0 +1,253 @@
+main {
+    display: grid;
+    color: black;
+    font-family: arial;
+
+    grid-template-areas: "my-header my-header"  "my-nav my-nav"  "my-section my-section" "my-aside my-aside" "my-footer my-footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 150px 250px 100px 80px;
+}
+
+header {
+    background-color: blanchedalmond;
+    grid-area: my-header;    
+}
+
+header img {
+    float: right;
+}
+header h1 {
+    font-size: x-large;
+}
+header h2 {
+    font-size: large;
+}
+header h3{
+    float: left;
+    margin-right: 2%;
+}
+#FotoPersonal{
+    float: left;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: cornflowerblue;
+    grid-area: my-nav;
+}
+
+section {
+    background-color: indigo;
+    grid-area: my-section;
+}
+
+aside {
+    background-color: darkmagenta;
+    grid-area: my-aside;
+}
+
+footer {
+    background-color: darkorchid;
+    grid-area: my-footer;
+}
+
+nav a, aside a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    main {
+        grid-template-areas: "my-header my-header" "my-nav my-nav" "my-aside my-section" "my-footer my-footer";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 200px 150px 340px 80px;
+    }
+    
+}
+
+@media (min-width: 1001px) {
+    main {
+        grid-template-areas: "my-header my-header" "my-nav my-nav" "my-section my-aside" "my-footer my-footer ";       
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    nav{
+        text-align: center;        
+        width: 100%;
+        margin-bottom:0px;
+    }
+    nav a{
+        color: black;
+        margin-left: 100px;
+        font-size: x-large;        
+    }
+    section{
+        background-color: lightgrey;               
+    }        
+    #Not1{
+        float: right;
+        width: 15%;
+        margin-right: 2%;
+        margin-top: 8%;
+        margin-bottom: 5px;
+        margin-left: 2%;
+        border-radius: 10%;
+        
+        
+    }
+    #Not2{
+        float: right;
+        width: 15%;
+        margin-right: 2%;
+        margin-top: 5%;
+        margin-left: 2%;
+        border-radius: 10%;
+        
+    }
+    aside{
+        background-color: cornflowerblue;
+        font-size: small;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    aside div{
+        background-color: coral;
+        border: 1px solid;
+        font-size: large;
+        text-align: left;
+        margin-bottom: 5%;        
+    }
+    aside div h1{
+        text-align: center;
+    }
+    aside div h2{
+        text-align: center;
+    }
+    footer{
+        background-color: darkgoldenrod;
+    }
+    footer div a {
+        text-decoration: none;
+        color: black;
+    } 
+    h5{
+        font-size: large;
+    } 
+    #caja1{
+        float: left;
+        
+    }
+    #caja2{
+        float: left;
+        padding-left: 2%;        
+    }
+    #caja3{
+        float: left;
+        padding-left: 5%;       
+    }
+    #caja4{
+        float: left;
+        padding-left: 5%;
+        
+        
+    } 
+    #caja5{
+        text-align: center;
+    }
+    div p{
+        text-align: justify;
+        margin-right: 5%;
+        
+    }
+    div table{
+        margin-bottom: 3%;
+    }
+    #proyectos{
+        display: grid;
+        grid-template-columns:33.3% 33.3% 33.3%;        
+        text-align: center;
+
+    }
+    #foto1{
+        width: 60%;
+        height: 100%;
+        border-radius: 10%;
+    }
+    #foto2{
+        width: 80%;
+        height: 60%;
+        border-radius: 10%;
+    }
+    #foto3{
+        width: 60%;
+        height: 60%;
+        border-radius: 10%;
+    }
+    #foto4{
+        width: 60%;
+        height: 60%;
+        border-radius: 10%;
+        
+    }
+    #foto5{
+        width: 60%;
+        height: 60%;
+        border-radius: 10%;
+    }
+    #proc1{
+        margin-bottom: 150px;
+    }
+
+    nav h1{
+        text-align: left;
+        background-color:white;
+    }
+
+    nav div{
+        text-align: left;
+        
+        width: 100%;        
+    }
+    #contacto div label {
+        position: absolute; 
+        width: 300px;       
+    }
+    #contacto div input{
+        margin-left: 65px;
+        width: 300px;        
+    }   
+    
+    .boton{
+        text-align: center;
+    }
+    #contacto{
+        display: grid;
+        grid-template-columns:60% 40%;        
+        
+    }
+    #edad{
+        height: 100px;
+    }
+    
+    #iniciosesion{
+        float: right;
+        color: black;
+        text-decoration: none;
+        margin: 3%;
+    }
+
+    #iniciador{
+        text-align: center;
+        margin: 4%;
+    }
+    #olvido{
+        color: black;
+    }
+
+    #FILSET{
+        width: 20% ;
+        margin-left: 40%;
+                
+    }
+}
